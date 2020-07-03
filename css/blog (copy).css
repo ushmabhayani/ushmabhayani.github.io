@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+body{
+    /* font-family: 'Playfair Display', serif; */
+    font-family: 'Roboto', sans-serif;
+    color: #333333;
+    font-size: 16px;
+}
+img{
+    width: 100%;
+}
+p{
+    color: #525252;
+}
+a{
+    text-decoration: none;
+    color: #525252;
+}
+ul{
+    list-style: none;
+}
+.container{
+    max-width: 1080px;
+    margin: 0 auto;
+    position: relative;
+}
+.flex_row{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.header{
+    padding: 12px 0;
+    color: #525252;
+    font-size: 14px;
+    border-bottom: 1px solid #b8b8b8;
+}
+
+.logo{
+    font-family: 'Playfair Display', serif;
+}
+.navbar{
+    min-height: 10vh;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+.logo a{
+    font-size: 24px;
+    font-weight: 700;
+    color: #007bff;
+}
+.subscribe a, .signup a{
+    color: #525252;
+}
+.fas.fa-search.search-icn{
+    font-size: 17px;
+    padding-right: 12px;
+}
+.btn-border{
+    border: 1px solid #525252;
+    padding: 6px 12px;
+    border-radius: 4px;
+}
+.toggle-menu{
+    /* display: none; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    cursor: pointer;
+}
+.navlinks ul{
+    padding: 12px 0;
+}
+.navlinks li a{
+    display: block;
+}
+.navlinks a:hover{
+    color: #007bff;
+}
+
+
+
+
+
+
+
+
+
+/* responsive */
+@media screen and (max-width: 400px){
+   .navlinks ul{
+       flex-direction: column;
+       align-content: space-between;
+   }
+   .subscribe{
+       display: none;
+   }
+}
+
+

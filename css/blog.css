@@ -1,0 +1,288 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+body{
+    /* font-family: 'Playfair Display', serif; */
+    font-family: 'Roboto', sans-serif;
+    color: #333333;
+    font-size: 16px;
+}
+img{
+    width: 100%;
+}
+p{
+    color: #333333;
+}
+a{
+    text-decoration: none;
+    color: #333333;
+}
+ul{
+    list-style: none;
+}
+.container{
+    max-width: 1080px;
+    margin: 0 auto;
+    position: relative;
+}
+.flex_row{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+}
+.header{
+    padding: 12px 0;
+    color: #525252;
+    font-size: 14px;
+    border-bottom: 1px solid #b8b8b8;
+    justify-content: space-between;
+}
+
+.logo{
+    font-family: 'Playfair Display', serif;
+}
+.navbar{
+    min-height: 10vh;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+.logo a{
+    font-size: 24px;
+    font-weight: 700;
+    color: #007bff;
+}
+.subscribe a, .signup a{
+    color: #525252;
+}
+.fas.fa-search.search-icn{
+    font-size: 17px;
+    padding-right: 12px;
+}
+.btn-border{
+    border: 1px solid #525252;
+    padding: 6px 12px;
+    border-radius: 4px;
+}
+.toggle-menu{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    cursor: pointer;
+}
+.toggle-menu .toggleicon{
+    display: flex;
+    justify-content: start;
+}
+.toggle-menu .toggleicon i{
+    font-size: 18px;
+}
+.navlinks ul{
+    padding: 12px 0;
+}
+.navlinks ul li{
+    padding: 12px 0;
+    text-align: center;
+    cursor: pointer;
+}
+.navlinks li .nav-item{
+    display: block;
+    text-align: center;
+    width: auto;
+}
+.navlinks a:hover{
+    color: #007bff;
+}
+section{
+    margin-bottom: 25px;
+}
+/* banner  img*/
+.banner{
+    padding: 30px 15px;
+    background-color: #333333;
+    border-radius: 5px;
+    position: relative;
+
+}
+.banner-content{
+    width: 50%;
+    padding-left: 5%;
+}
+.banner-content h3{
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    font-style: italic; 
+    padding-bottom: 15px;
+    color: #ffffff;  
+}
+.banner-content p{
+    line-height: 1.5;
+    padding-bottom: 15px;
+    color: #ffffff;
+    font-weight: 500;
+}
+.banner-content a{
+    font-weight: 900;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+/* posts */
+.post{
+   display: flex;
+   justify-content: space-between;
+   border: 1px solid #d8d8d8;
+   -webkit-box-shadow: 6px 7px 9px -4px rgba(0,0,0,0.12);
+-moz-box-shadow: 6px 7px 9px -4px rgba(0,0,0,0.12);
+box-shadow: 6px 7px 9px -4px rgba(0,0,0,0.12);
+   border-radius: 2px; 
+   width: 48%;
+}
+.post-content{
+    padding: 15px;
+    width: 58%;
+}
+.post-content p{
+    font-weight: 500;
+    color: #007bff;
+    margin-bottom: 5px;
+
+}
+.post-content h4, .main-post h4{
+    font-size: 24px;
+    font-family: 'Playfair Display', serif;
+
+}
+.post-content .mutedtext{
+    color: #b8b8b8;
+    margin-bottom: 10px;
+}
+.post-content .description{
+    color: #333333;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+.post-content a{
+    font-weight: 500;
+    color: #007bff;
+    cursor: pointer;
+}
+.post-img img{
+    height: 100%;
+}
+.main-post{
+    width: 60%;
+}
+.main-post h4{
+    font-style: italic;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #b8b8b8;
+}
+.main-post h2{
+    margin-top: 20px;
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+.main-post p{
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+.main-post .mutedtext{
+    color: #b8b8b8;
+    margin-bottom: 20px;
+    font-weight: 700;
+    
+}
+.main-post a{
+    color: #007bff;
+}
+.main-post h3{
+    margin-top: 20px;
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+.main-post .small{
+    font-size: 12px;
+    font-weight: 400;
+}
+.main-post .list{
+    margin-left: 40px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.about h4{
+    font-style: italic;
+    padding-bottom: 20px;
+    font-family: 'Playfair Display', serif;
+}
+aside{
+    width: 30%;
+    padding-left: 15px;
+    margin-left: 15px;
+    float: right;
+    font-style: italic;
+    background-color: lightgray;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* responsive */
+@media screen and (max-width: 400px){
+   .container{
+       width: 90%;
+       margin: 0 auto;
+   }
+   body{
+    font-size: calc(16px + (18 - 14) * ((100vw - 300px) / (1920 - 300))); 
+   }
+    .banner-content{
+        width: 100%;
+        padding-left: 2%;
+    }
+    .banner-content h3{
+        font-size: calc(48px + (18 - 14) * ((100vw - 300px) / (1920 - 300)));
+
+    }
+    .posts .flex_row{
+        flex-direction: column;
+    }
+    .post{
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .post-content{
+        width: 100%;
+    }
+    
+
+
+}
+/* media query ends */
+
+
+
+
+
+
+
