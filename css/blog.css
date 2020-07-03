@@ -20,7 +20,7 @@ p{
 }
 a{
     text-decoration: none;
-    color: #333333;
+    /* color: #333333; */
 }
 ul{
     list-style: none;
@@ -32,7 +32,7 @@ ul{
 }
 .flex_row{
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
     /* flex-wrap: wrap; */
@@ -157,6 +157,7 @@ box-shadow: 6px 7px 9px -4px rgba(0,0,0,0.12);
     margin-bottom: 5px;
 
 }
+
 .post-content h4, .main-post h4{
     font-size: 24px;
     font-family: 'Playfair Display', serif;
@@ -180,8 +181,11 @@ box-shadow: 6px 7px 9px -4px rgba(0,0,0,0.12);
 .post-img img{
     height: 100%;
 }
-.main-post{
-    width: 60%;
+
+/* blog */
+article{
+    float: left;
+    width: 65%;
 }
 .main-post h4{
     font-style: italic;
@@ -194,7 +198,7 @@ box-shadow: 6px 7px 9px -4px rgba(0,0,0,0.12);
     font-size: 30px;
     margin-bottom: 5px;
 }
-.main-post p{
+.main-post p, .about p{
     margin-bottom: 20px;
     font-weight: 500;
 }
@@ -222,21 +226,55 @@ box-shadow: 6px 7px 9px -4px rgba(0,0,0,0.12);
     font-weight: 500;
     margin-bottom: 20px;
 }
-.about h4{
+
+.sidebar{
+    float: right;
+    width: 30%;
+}
+
+/* .sidebar::after, article::after{
+    content: '';
+    display: table;
+    clear: both;
+} */
+.about{
+    padding: 25px;
+    font-style: italic;
+    background-color: #eeeeee;
+    margin-bottom: 20px;
+}
+.elsewhere, .archive{
+    margin-bottom: 20px;
+}
+.about h4, .archive h4, .elsewhere h4{
     font-style: italic;
     padding-bottom: 20px;
     font-family: 'Playfair Display', serif;
 }
-aside{
-    width: 30%;
-    padding-left: 15px;
-    margin-left: 15px;
-    float: right;
-    font-style: italic;
-    background-color: lightgray;
+.sidebar h4{
+    font-size: 24px;
+    padding-bottom: 10px;
 }
-
-
+.archive{
+    background-color: transparent;
+    font-weight: 500;
+}
+.article:after{
+    content: '';
+    clear: both;
+    display: table;
+}
+footer{
+    padding: 40px 0;
+    color: #525252;
+    text-align: center;
+    background-color: #eeeeee;
+    border-top: .05rem solid #d8d8d8;
+}
+footer p{
+    margin-bottom: 16px;
+    font-weight: 500;
+}
 
 
 
@@ -274,6 +312,11 @@ aside{
     .post-content{
         width: 100%;
     }
+    .sidebar, article{
+        float: none;
+        width: 100%;
+    }
+    
     
 
 
