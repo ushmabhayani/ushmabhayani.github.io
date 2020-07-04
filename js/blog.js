@@ -14,7 +14,7 @@ function newblog(){
         document.getElementById("nameerr").innerHTML = "Enter A Valid Name";
         return false;
     } if(blog =="" || blog== null){
-        document.getElementById("nameerr").innerHTML = "Enter Blog Content";
+        document.getElementById("contenteerr").innerHTML = "Enter Blog Content";
         return false;
     }
 

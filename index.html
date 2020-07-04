@@ -191,17 +191,23 @@
                                 <h3 style="margin-top: 0;">Ready to Post!</h3>
                                 <p>Write what's on your mind</p>
 
+                                <div class="mb">
                                 <input type="text" class="heading" name="heading" placeholder="Blog Heading">
-                                <span id="headerr" style="color: red;"></span>
+                                <span id="headerr" class="errormsg"></span>
+                                </div>
 
+                                <div class="mb">
                                 <input type="text" class="publisher" name="publisher" placeholder="Enter your name">
-                                <span id="nameerr" style="color: red;"></span>
+                                <span id="nameerr" class="errormsg"></span>
+                                </div>
 
+                                <div class="mb">
                                 <textarea placeholder="Enter the blog Content" class="content" name="content"></textarea>
-                                <span id="contenteerr" style="color: red;"></span>
+                                <p id="contenteerr" class="errormsg"></p>
+                                </div>
 
                                 <input type="submit" class="button" onclick="newblog() ; return false" value="submit">
-                    </form>
+                        </form>
                     
                                 
                 
