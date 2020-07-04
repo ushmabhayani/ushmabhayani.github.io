@@ -198,9 +198,9 @@ article{
     font-size: 30px;
     margin-bottom: 5px;
 }
-.main-post p, .about p{
+.main-post p, .about p, .form p{
     margin-bottom: 20px;
-    font-weight: 500;
+    font-weight: 700;
 }
 .main-post .mutedtext{
     color: #b8b8b8;
@@ -211,7 +211,7 @@ article{
 .main-post a{
     color: #007bff;
 }
-.main-post h3{
+.main-post h3, .form h3{
     margin-top: 20px;
     font-family: 'Playfair Display', serif;
     font-size: 28px;
@@ -231,12 +231,6 @@ article{
     float: right;
     width: 30%;
 }
-
-/* .sidebar::after, article::after{
-    content: '';
-    display: table;
-    clear: both;
-} */
 .about{
     padding: 25px;
     font-style: italic;
@@ -264,9 +258,34 @@ article{
     clear: both;
     display: table;
 }
+/* pagination */
+.pagination .btn{
+    border: transparent;
+    background-color: transparent;
+    font-weight: 700;
+    border-radius: 30px;
+    text-align: center;
+    padding: 6px 12px;
+    font-size: 16px;
+    display: inline-block;
+    cursor: pointer;
+    margin: 60px 0;
+}
+.pagination .active-btn{
+    border: 1px solid #007bff;
+    border-radius: 30px;
+    color: #007bff;   
+}
+.pagination .btn-disable{
+    border: 1px solid #b8b8b8;
+    border-radius: 30px;
+    color: #b8b8b8;
+}
+
+/* footer */
 footer{
     padding: 40px 0;
-    color: #525252;
+    color: #ffffff;
     text-align: center;
     background-color: #eeeeee;
     border-top: .05rem solid #d8d8d8;
@@ -275,6 +294,75 @@ footer p{
     margin-bottom: 16px;
     font-weight: 500;
 }
+.form{
+    margin: 0 auto;
+}
+.form h3, .form p{
+    color: #ffffff;
+}
+.form-bg{
+   /* background-color: #fdfdfd;  */
+   padding: 30px 15px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px 0 rgba(1,1,1,.05);
+    margin: 0 auto;
+    text-align: center;
+    background-color: #333333;
+}
+.form input[type=text], .form input[type=email]{
+    padding: 12px;
+    box-sizing: border-box;
+    border: 1px solid #bbbbbb;
+    border-collapse: collapse;
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.form input[type=text]::placeholder, .form textarea::placeholder{
+    color: #bbbbbb;
+}
+.form input[type=text]:focus, .form textarea:focus{
+    border: none;
+
+}
+.form textarea{
+    width: 70%;
+    height: 100px;
+    resize: none;
+    box-sizing: border-box;
+    border-collapse: collapse;
+    padding: 12px;
+    font-family: 'Roboto', sans-serif;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    overflow-y: auto;
+}
+
+.button{
+    display: block;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.5;
+    text-align: center;
+    border: 2px solid #ffffff;
+    border-radius: 4px;
+    color: #fff;
+    margin: 0 auto;
+    background-color: transparent;
+    font-weight: 700;
+}
+.button:hover{
+    color: #333333;
+    background-color: #ffffff;
+    border: 2px solid #ffffff;
+    font-weight: 700;
+}
+
+
+
+
 
 
 
@@ -316,6 +404,8 @@ footer p{
         float: none;
         width: 100%;
     }
+
+
     
     
 
