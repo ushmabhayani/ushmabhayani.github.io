@@ -164,6 +164,18 @@
                     <p>aspernatur similique. Et quam saepe rerum sit aspernatur similique. Et quam saepe rerum</p>   
                 </div>
                 <!-- post3 end -->
+
+                <!-- new post -->
+                <section class="new-post">
+                    <div class="main-post">
+                        <h2 id="bt"></h2>
+                        <p class="mutedtext"><a href="#" id="pn"></a></p>
+                        <p id="pc"></p> 
+                    </div>
+
+                </section>
+                <!-- new post ends -->
+
                  <!-- pagination -->
                     <nav class="pagination">
                             <button type="button" class="btn active-btn">Older</button>
@@ -173,6 +185,7 @@
                     <!-- blog form -->
 
                     <section class="form">
+                    <form id="blogpost" name="blogpost">
                         <div class="container">
                             <div class="form-bg">
                                 <h3 style="margin-top: 0;">Ready to Post!</h3>
@@ -187,7 +200,9 @@
                                 <textarea placeholder="Enter the blog Content" class="content" name="content"></textarea>
                                 <span id="contenteerr" style="color: red;"></span>
 
-                                <button type="submit" class="button">Submit</button>
+                                <input type="submit" class="button" onclick="newblog() ; return false" value="submit">
+                    </form>
+                    
                                 
                 
                             </div>
@@ -237,16 +252,6 @@
         </div>
     </section>
 
-    <!-- pagination
-    <nav class="pagination">
-        <div class="container">
-            <button type="button" class="btn active-btn">Older</button>
-            <button type="button" class="btn btn-disable" disabled>Newer</button>
-        </div>
-      </nav> -->
-
-    <!-- blog form -->
-
 
     <!-- footer -->
     <footer>
@@ -259,8 +264,7 @@
 
 
 
-    <script src="/js/jquery.js"></script>
-    <script src="/js/blog.js"></script>
+<script src="/js/blog.js"></script>
 </body>
 </html>
 
